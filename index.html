@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ငါနင့်ကိုပြောချင်တာရှိတယ် ❤️</title>
+<style>
+*{box-sizing:border-box}
+body{
+margin:0;min-height:100vh;display:grid;place-items:center;
+font-family:system-ui,sans-serif;text-align:center;color:#803653;
+background:linear-gradient(135deg,#ffe4ef,#f9d7ed,#e8e2ff);
+overflow:hidden
+}
+.card{
+width:90%;max-width:420px;padding:25px 18px;
+background:#ffffffdf;border-radius:28px;
+box-shadow:0 10px 40px #b85d8b33
+}
+.boy{font-size:85px;animation:bob 2s infinite}
+h2{line-height:1.8}
+p{line-height:1.9;font-size:17px}
+button{
+border:0;border-radius:30px;padding:13px 18px;
+font-size:16px;font-weight:bold;margin:8px;
+transition:transform .3s
+}
+.yes{background:#ff5797;color:white}
+.no{background:#ffe1ed;color:#873956}
+.hidden{display:none}
+.note{padding:12px;background:#fff0f6;border-radius:15px}
+.petal{position:fixed;top:-30px;animation:fall 6s linear forwards;pointer-events:none}
+@keyframes bob{50%{transform:translateY(-8px)}}
+@keyframes fall{to{transform:translateY(110vh) rotate(400deg)}}
+</style>
+</head>
+<body>
+<div class="card">
+<section id="first">
+<div class="boy">🌸🧑🏻‍🎤</div>
+<h2>ငါနင့်ကိုပြောချင်တာတစ်ခုရှိတယ်။<br>သိချင်လား။ 🥺</h2>
+<button class="yes" id="want" onclick="next()">သိချင်တယ် ❤️</button>
+<button class="no" onclick="grow('want')">မသိချင်ဘူး 🙈</button>
+</section>
+
+<section id="second" class="hidden">
+<div class="boy" id="boy">🧑🏻‍🎤🌸</div>
+<h2>ငါနင့်ကိုချစ်တယ်။<br>အရင်ကတည်းကပဲ။ 🥹❤️</h2>
+<p>နင်ရော ငါ့ကိုချစ်လား။</p>
+<button class="yes" id="love" onclick="happy()">ချစ်တယ် ❤️</button>
+<button class="no" onclick="again()">မချစ်ဘူး 💔</button>
+<div id="note" class="note hidden">
+သေချာလေးစဉ်းစားပေးပါ
